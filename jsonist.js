@@ -40,11 +40,11 @@ function makeMethod (method, data) {
     if (!options.headers)
       options.headers = {}
 
-    if (data && !options.headers['content-type'])
-      options.headers['content-type'] = 'application/json'
+    if (data && !options.headers['Content-Type'])
+      options.headers['Content-Type'] = 'application/json'
 
-    if (!options.headers['accept'])
-      options.headers['accept'] = 'application/json'
+    if (!options.headers['Accept'])
+      options.headers['Accept'] = 'application/json'
 
     var request = (options.hyperquest || hyperquest)(url, options)
     collector(request, callback)
