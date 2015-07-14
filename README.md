@@ -1,16 +1,12 @@
 # jsonist
 
-[![Build Status](https://secure.travis-ci.org/rvagg/jsonist.png)](http://travis-ci.org/rvagg/jsonist)
-
 **JSON over HTTP**: A simple wrapper around [hyperquest](https://github.com/substack/hyperquest) for dealing with JSON web APIs.
-
-[![NPM](https://nodei.co/npm/jsonist.svg)](https://nodei.co/npm/jsonist/)
 
 A simple GET:
 
 ```js
 var url  = 'https://api.github.com/users/rvagg'
-  , opts = { headers: { 'user-agent': 'yee haw grandma' } }
+  , opts = { headers: { 'User-Agent': 'yee haw grandma' } }
   , fn   = function (err, data, resp) {
       console.log(data)
     }
@@ -29,7 +25,7 @@ or a POST:
 ```js
 var url  = 'https://api.github.com/repos/rvagg/jsonist/issues'
   , opts = {
-        headers : { 'user-agent': 'yee haw grandma' }
+        headers : { 'User-Agent': 'yee haw grandma' }
       , auth    : 'rvagg:24d5dee258c64aef38a66c0c5eca459c379901c2'
     }
   , data = {
@@ -77,4 +73,5 @@ Same as  `jsonist.post()` but for when that extra character is too much to type 
 
 ## License
 
-**jsonist** is Copyright (c) 2014 Rod Vagg [@rvagg](https://github.com/rvagg) and licensed under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.
+**jsonist** is Copyright (c) 2014 Rod Vagg [@rvagg](https://github.com/rvagg) and licensed under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.  
+**true-jsonist** is Copyleft (ç)

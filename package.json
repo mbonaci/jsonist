@@ -1,32 +1,37 @@
 {
-  "name": "jsonist",
-  "version": "1.1.0",
-  "description": "A simple wrapper around for dealing with JSON web APIs",
+  "name": "true-jsonist",
+  "version": "2.0.1",
+  "description": "Easily send {'Content-Type': 'application/json'} requests",
   "main": "jsonist.js",
   "scripts": {
     "test": "node test.js | faucet"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rvagg/jsonist.git"
+    "url": "https://github.com/mbonaci/jsonist.git"
   },
   "keywords": [
     "http",
     "hyperquest",
     "json",
-    "hungry hungry http hippo!"
+    "header names now comply to IETF standard. Fuck Jetty.",
+    "rvagg"
   ],
-  "author": "Rod Vagg <r@va.gg>",
+  "authors":
+   [ "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)",
+     "Matteo Collina <matteo.collina@gmail.com> (https://github.com/mcollina)",
+     "Jarett Cruger <jcrugzz@gmail.com> (https://github.com/jcrugzz)",
+     "Marko Bonaći <mbonaci@gmail.com> (https://github.com/mbonaci)"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rvagg/jsonist/issues"
+    "url": "https://github.com/mbonaci/jsonist/issues"
   },
   "dependencies": {
-    "bl": "~0.9.4",
+    "bl": "~1.0.0",
     "hyperquest": "~1.2.0",
-    "json-stringify-safe": "~5.0.0"
+    "json-stringify-safe": "~5.0.1"
   },
-  "homepage": "https://github.com/rvagg/jsonist",
+  "homepage": "https://github.com/mbonaci/jsonist",
   "devDependencies": {
     "faucet": "0.0.1",
     "tape": "~3.5.0",
